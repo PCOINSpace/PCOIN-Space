@@ -75,11 +75,7 @@
               \_|     \____/ \___/  \___/ \_| \_/ |_|  \___| \__,_| \__| \__,_||_|   \___||___/
 
 
-
-
-
-
-
+   Anti-Whale System 
    5% fee auto add to the liquidity pool to locked forever when selling
    3% fee auto distribute to all holders
    5% fee auto moved to marketing wallet
@@ -887,8 +883,8 @@ contract PCOIN is Context, IERC20, Ownable {
     bool inSwapAndLiquify;
     bool public swapAndLiquifyEnabled = true;
     
-    uint256 public _maxTxAmount = 5000000 * 10**6 * 10**9;
-    uint256 private numTokensSellToAddToLiquidity = 500000 * 10**6 * 10**9;
+    uint256 public _maxTxAmount = 50000000 * 10**6 * 10**9;
+    uint256 private numTokensSellToAddToLiquidity = 50000000 * 10**6 * 10**9;
     
     event MinTokensBeforeSwapUpdated(uint256 minTokensBeforeSwap);
     event SwapAndLiquifyEnabledUpdated(bool enabled);
